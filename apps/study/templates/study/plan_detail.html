@@ -80,19 +80,22 @@
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">학습 시작하기</h5>
+                    <p class="text-muted small text-center">단어장을 통해 학습한 단어만 오늘 학습한 단어로 카운트 됩니다.</p>
                     <br>
+
                     <div class="row">
                         <div class="col-md-4">
                             <a href="{% url 'study:flashcard_study' plan.id %}" class="btn btn-primary btn-lg w-100 mb-3 py-4">
                                 <i class="fas fa-clone fa-2x mb-2"></i><br>플래시카드
                             </a>
-                            <p class = "text-muted small text-center">한 번에 하나의 단어에 집중하여 학습할 수 있습니다.</p>
+                            <p class="text-muted small text-center">한 번에 하나의 단어에 집중하여 학습할 수 있습니다.</p>
                         </div>
                         <div class="col-md-4">
                             <a href="{% url 'study:vocabulary_study' plan.id %}" class="btn btn-success btn-lg w-100 mb-3 py-4">
                                 <i class="fas fa-book fa-2x mb-2"></i><br>단어장
                             </a>
-                            <p class = "text-muted small text-center">여러 단어를 한눈에 보고 비교하면 학습할 수 있습니다.</p>
+                            <p class="text-muted small text-center">여러 단어를 한눈에 보고 비교하면 학습할 수 있습니다.</p>
+                            
                         </div>
                         <div class="col-md-4">
                             <a href="{% url 'study:review_study' plan.id %}" class="btn btn-warning btn-lg w-100 mb-3 py-4">
